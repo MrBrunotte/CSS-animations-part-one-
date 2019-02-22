@@ -1,4 +1,4 @@
-# CSS Animations
+# CSS Animations (part one)
 
 ## Keyframes and animation properties
 
@@ -29,3 +29,13 @@ not set at all, the animation will not happen. If the animation-duration propert
 going to happen. In that case, the default value will be used, and that is 0 seconds. Therefore that animation will
 be instant. It will happen, but so fast that we will not be able to see it. The animation-timing-functions is applied
 at the beginning and the end of the keyfram.
+
+##### Challenge
+Make a ball jump up and down. It should go from 0px to 100px. One animation cycle should take half of a second
+and the animation should run infinitely. It should be called jump.
+
+The class is called .ball and the keframe is named jump
+
+#### Move, Scale and Spin the elements
+The first value in the CSS3 transformational functions is for the X-axis: the second is for the Y-axis.
+If only one value is defined, it will be applied to both axis.
