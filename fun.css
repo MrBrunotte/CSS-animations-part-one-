@@ -1,0 +1,51 @@
+.box {
+    background-color: #000;
+    width: 150px;
+    height: 0;
+    margin: 25px;
+    
+    animation-name: potato;     /* refer to the keyframe in the .box class */
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite; /*number of counts, here the box will constantly expand and collapse */
+    animation-direction: alternate;
+}
+
+@keyframes potato {
+    from {
+       
+    }
+    
+    to {
+        height: 150px;
+    }
+}
+
+.ball {
+    background-color: #000;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    top: 0;
+    position: relative;
+    animation: jump .5s alternate infinite ease-in-out;
+}
+
+@keyframes jump {
+    from {
+        top: 0;
+    }
+    
+    to {
+        top: 200px;
+    }
+}
+
+.box2 {
+    width: 100px;
+    height: 100px;
+    background-color: #e84610;
+    transform: translate(300px, 10px); /*300 on X-axis and 10 on Y-axis */
+    transform: skew(-5deg);
+}
